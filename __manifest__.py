@@ -2,7 +2,7 @@
 {
     "name": "Accounting Report Million Precision",
     "summary": "Display accounting report amounts in millions with two decimals.",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Accounting/Accounting",
     "author": "Thein Htoo Aung",
     "license": "LGPL-3",

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models
+from numbers import Real
 
 
 class AccountReport(models.Model):
@@ -16,7 +17,8 @@ class AccountReport(models.Model):
         """
         if (
             figure_type == "monetary"
-            and value is not None
+            and isinstance(value, Real)
+            and not isinstance(value, bool)
             and options.get("rounding_unit") == "millions"
         ):
             return super()._format_value(
